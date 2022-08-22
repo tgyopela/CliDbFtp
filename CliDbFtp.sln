@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliDbFtp", "CliDbFtp\CliDbFtp.csproj", "{586B6B28-0FEC-4CE7-87C6-52BF1558F610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586B6B28-0FEC-4CE7-87C6-52BF1558F610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586B6B28-0FEC-4CE7-87C6-52BF1558F610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586B6B28-0FEC-4CE7-87C6-52BF1558F610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586B6B28-0FEC-4CE7-87C6-52BF1558F610}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B22283BC-4F99-48CA-97A1-482595601133}
+	EndGlobalSection
+EndGlobal
