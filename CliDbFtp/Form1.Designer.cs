@@ -37,10 +37,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtPort = new System.Windows.Forms.TextBox();
-            this.txtServer = new System.Windows.Forms.TextBox();
+            this.textFtpPwd = new System.Windows.Forms.TextBox();
+            this.txtFtpUser = new System.Windows.Forms.TextBox();
+            this.txtFtpPort = new System.Windows.Forms.TextBox();
+            this.txtFtpServer = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,8 +52,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.cbDBSend = new System.Windows.Forms.CheckBox();
+            this.cbFileDel = new System.Windows.Forms.CheckBox();
+            this.cbFtpEmailSend = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -65,13 +72,20 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(903, 548);
+            this.tabControl1.Size = new System.Drawing.Size(783, 548);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.checkBox2);
-            this.tabPage1.Controls.Add(this.checkBox1);
+            this.tabPage1.Controls.Add(this.textBox6);
+            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.cbFtpEmailSend);
+            this.tabPage1.Controls.Add(this.cbFileDel);
+            this.tabPage1.Controls.Add(this.cbDBSend);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.label12);
@@ -79,10 +93,10 @@
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.txtUser);
-            this.tabPage1.Controls.Add(this.txtPort);
-            this.tabPage1.Controls.Add(this.txtServer);
+            this.tabPage1.Controls.Add(this.textFtpPwd);
+            this.tabPage1.Controls.Add(this.txtFtpUser);
+            this.tabPage1.Controls.Add(this.txtFtpPort);
+            this.tabPage1.Controls.Add(this.txtFtpServer);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
@@ -96,18 +110,18 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(895, 522);
+            this.tabPage1.Size = new System.Drawing.Size(775, 522);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ftp Settings";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(600, 353);
+            this.button4.Location = new System.Drawing.Point(403, 285);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(139, 23);
             this.button4.TabIndex = 21;
-            this.button4.Text = "button4";
+            this.button4.Text = "Kapcsolat teszteles...";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // label13
@@ -164,33 +178,33 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "E-mai szerver:";
             // 
-            // textBox1
+            // textFtpPwd
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 20);
-            this.textBox1.TabIndex = 13;
+            this.textFtpPwd.Location = new System.Drawing.Point(86, 127);
+            this.textFtpPwd.Name = "textFtpPwd";
+            this.textFtpPwd.Size = new System.Drawing.Size(286, 20);
+            this.textFtpPwd.TabIndex = 13;
             // 
-            // txtUser
+            // txtFtpUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(86, 87);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(286, 20);
-            this.txtUser.TabIndex = 12;
+            this.txtFtpUser.Location = new System.Drawing.Point(86, 87);
+            this.txtFtpUser.Name = "txtFtpUser";
+            this.txtFtpUser.Size = new System.Drawing.Size(286, 20);
+            this.txtFtpUser.TabIndex = 12;
             // 
-            // txtPort
+            // txtFtpPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(86, 47);
-            this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(100, 20);
-            this.txtPort.TabIndex = 11;
+            this.txtFtpPort.Location = new System.Drawing.Point(86, 47);
+            this.txtFtpPort.Name = "txtFtpPort";
+            this.txtFtpPort.Size = new System.Drawing.Size(100, 20);
+            this.txtFtpPort.TabIndex = 11;
             // 
-            // txtServer
+            // txtFtpServer
             // 
-            this.txtServer.Location = new System.Drawing.Point(63, 7);
-            this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(309, 20);
-            this.txtServer.TabIndex = 10;
+            this.txtFtpServer.Location = new System.Drawing.Point(63, 7);
+            this.txtFtpServer.Name = "txtFtpServer";
+            this.txtFtpServer.Size = new System.Drawing.Size(309, 20);
+            this.txtFtpServer.TabIndex = 10;
             // 
             // label7
             // 
@@ -221,18 +235,18 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(388, 424);
+            this.button3.Location = new System.Drawing.Point(403, 396);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(157, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "Megsem";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(272, 417);
+            this.button2.Location = new System.Drawing.Point(215, 396);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(157, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Mentes";
             this.button2.UseVisualStyleBackColor = true;
@@ -243,7 +257,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Kapcsolat teszteles";
+            this.button1.Text = "Kapcsolat teszteles...";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -292,29 +306,80 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbDBSend
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(150, 170);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbDBSend.AutoSize = true;
+            this.cbDBSend.Location = new System.Drawing.Point(150, 170);
+            this.cbDBSend.Name = "cbDBSend";
+            this.cbDBSend.Size = new System.Drawing.Size(15, 14);
+            this.cbDBSend.TabIndex = 22;
+            this.cbDBSend.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbFileDel
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(150, 210);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbFileDel.AutoSize = true;
+            this.cbFileDel.Location = new System.Drawing.Point(150, 210);
+            this.cbFileDel.Name = "cbFileDel";
+            this.cbFileDel.Size = new System.Drawing.Size(15, 14);
+            this.cbFileDel.TabIndex = 23;
+            this.cbFileDel.UseVisualStyleBackColor = true;
+            // 
+            // cbFtpEmailSend
+            // 
+            this.cbFtpEmailSend.AutoSize = true;
+            this.cbFtpEmailSend.Location = new System.Drawing.Point(502, 10);
+            this.cbFtpEmailSend.Name = "cbFtpEmailSend";
+            this.cbFtpEmailSend.Size = new System.Drawing.Size(15, 14);
+            this.cbFtpEmailSend.TabIndex = 24;
+            this.cbFtpEmailSend.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(482, 47);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(280, 20);
+            this.textBox1.TabIndex = 25;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(482, 83);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(74, 20);
+            this.textBox2.TabIndex = 26;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(482, 127);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(280, 20);
+            this.textBox3.TabIndex = 27;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(482, 170);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(280, 20);
+            this.textBox4.TabIndex = 28;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(482, 210);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(280, 20);
+            this.textBox5.TabIndex = 29;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(482, 250);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 30;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 597);
+            this.ClientSize = new System.Drawing.Size(804, 564);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -341,10 +406,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtServer;
-        private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFtpServer;
+        private System.Windows.Forms.TextBox txtFtpPort;
+        private System.Windows.Forms.TextBox txtFtpUser;
+        private System.Windows.Forms.TextBox textFtpPwd;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
@@ -352,8 +417,15 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbFileDel;
+        private System.Windows.Forms.CheckBox cbDBSend;
+        private System.Windows.Forms.CheckBox cbFtpEmailSend;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
 
